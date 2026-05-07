@@ -4,7 +4,7 @@ export const API_URL = import.meta.env.VITE_API_URL as string | undefined;
 export const useApi = !!API_URL;
 
 export const api = axios.create({
-  baseURL: API_URL || "/api",
+  baseURL: API_URL || "",
   headers: { "Content-Type": "application/json" },
 });
 
